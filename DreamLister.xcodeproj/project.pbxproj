@@ -15,6 +15,14 @@
 		005CCED11EEA02B000F117B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005CCECF1EEA02B000F117B8 /* LaunchScreen.storyboard */; };
 		005CCEDC1EEA02B000F117B8 /* DreamListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CCEDB1EEA02B000F117B8 /* DreamListerTests.swift */; };
 		005CCEE71EEA02B000F117B8 /* DreamListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CCEE61EEA02B000F117B8 /* DreamListerUITests.swift */; };
+		0087B0AE1EEA0B6D00132F70 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0A61EEA0B6D00132F70 /* Store+CoreDataClass.swift */; };
+		0087B0AF1EEA0B6D00132F70 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0A71EEA0B6D00132F70 /* Store+CoreDataProperties.swift */; };
+		0087B0B01EEA0B6D00132F70 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0A81EEA0B6D00132F70 /* Image+CoreDataClass.swift */; };
+		0087B0B11EEA0B6D00132F70 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0A91EEA0B6D00132F70 /* Image+CoreDataProperties.swift */; };
+		0087B0B21EEA0B6D00132F70 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0AA1EEA0B6D00132F70 /* ItemType+CoreDataClass.swift */; };
+		0087B0B31EEA0B6D00132F70 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0AB1EEA0B6D00132F70 /* ItemType+CoreDataProperties.swift */; };
+		0087B0B41EEA0B6D00132F70 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0AC1EEA0B6D00132F70 /* Item+CoreDataClass.swift */; };
+		0087B0B51EEA0B6D00132F70 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087B0AD1EEA0B6D00132F70 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		005CCEE21EEA02B000F117B8 /* DreamListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		005CCEE61EEA02B000F117B8 /* DreamListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerUITests.swift; sourceTree = "<group>"; };
 		005CCEE81EEA02B000F117B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0087B0A61EEA0B6D00132F70 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataClass.swift"; path = "../Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0087B0A71EEA0B6D00132F70 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataProperties.swift"; path = "../Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0087B0A81EEA0B6D00132F70 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataClass.swift"; path = "../Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0087B0A91EEA0B6D00132F70 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0087B0AA1EEA0B6D00132F70 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataClass.swift"; path = "../ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0087B0AB1EEA0B6D00132F70 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataProperties.swift"; path = "../ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0087B0AC1EEA0B6D00132F70 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "../Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0087B0AD1EEA0B6D00132F70 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +115,10 @@
 		005CCEC21EEA02B000F117B8 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				005CCEF61EEA038500F117B8 /* Controller */,
+				005CCEF51EEA038100F117B8 /* View */,
+				005CCEF41EEA037900F117B8 /* Model */,
 				005CCEC31EEA02B000F117B8 /* AppDelegate.swift */,
-				005CCEC51EEA02B000F117B8 /* ViewController.swift */,
 				005CCEC71EEA02B000F117B8 /* Main.storyboard */,
 				005CCECD1EEA02B000F117B8 /* Assets.xcassets */,
 				005CCECF1EEA02B000F117B8 /* LaunchScreen.storyboard */,
@@ -126,6 +144,44 @@
 				005CCEE81EEA02B000F117B8 /* Info.plist */,
 			);
 			path = DreamListerUITests;
+			sourceTree = "<group>";
+		};
+		005CCEF41EEA037900F117B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0087B0A61EEA0B6D00132F70 /* Store+CoreDataClass.swift */,
+				0087B0A81EEA0B6D00132F70 /* Image+CoreDataClass.swift */,
+				0087B0AA1EEA0B6D00132F70 /* ItemType+CoreDataClass.swift */,
+				0087B0AC1EEA0B6D00132F70 /* Item+CoreDataClass.swift */,
+				005CCF071EEA08C700F117B8 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		005CCEF51EEA038100F117B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		005CCEF61EEA038500F117B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				005CCEC51EEA02B000F117B8 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		005CCF071EEA08C700F117B8 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				0087B0A71EEA0B6D00132F70 /* Store+CoreDataProperties.swift */,
+				0087B0A91EEA0B6D00132F70 /* Image+CoreDataProperties.swift */,
+				0087B0AB1EEA0B6D00132F70 /* ItemType+CoreDataProperties.swift */,
+				0087B0AD1EEA0B6D00132F70 /* Item+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0087B0B41EEA0B6D00132F70 /* Item+CoreDataClass.swift in Sources */,
+				0087B0AF1EEA0B6D00132F70 /* Store+CoreDataProperties.swift in Sources */,
 				005CCEC61EEA02B000F117B8 /* ViewController.swift in Sources */,
+				0087B0B31EEA0B6D00132F70 /* ItemType+CoreDataProperties.swift in Sources */,
+				0087B0AE1EEA0B6D00132F70 /* Store+CoreDataClass.swift in Sources */,
+				0087B0B01EEA0B6D00132F70 /* Image+CoreDataClass.swift in Sources */,
+				0087B0B21EEA0B6D00132F70 /* ItemType+CoreDataClass.swift in Sources */,
 				005CCEC41EEA02B000F117B8 /* AppDelegate.swift in Sources */,
 				005CCECC1EEA02B000F117B8 /* DreamLister.xcdatamodeld in Sources */,
+				0087B0B51EEA0B6D00132F70 /* Item+CoreDataProperties.swift in Sources */,
+				0087B0B11EEA0B6D00132F70 /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +584,7 @@
 				005CCEED1EEA02B000F117B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005CCEEE1EEA02B000F117B8 /* Build configuration list for PBXNativeTarget "DreamListerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +593,7 @@
 				005CCEF01EEA02B000F117B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005CCEF11EEA02B000F117B8 /* Build configuration list for PBXNativeTarget "DreamListerUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +602,7 @@
 				005CCEF31EEA02B000F117B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
