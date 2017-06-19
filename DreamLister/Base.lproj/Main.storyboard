@@ -34,11 +34,11 @@
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-PH-Jr2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-PH-Jr2">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="7XT-PX-71j" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="7XT-PX-71j" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7XT-PX-71j" id="6xF-SS-HQZ">
@@ -105,6 +105,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="SRk-XS-mxe" secondAttribute="bottom" id="x1x-8E-0KT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="details" destination="fCm-bd-MdM" id="k9r-hJ-R3A"/>
                                             <outlet property="price" destination="JfR-GD-RUX" id="fpU-Kz-tdc"/>
@@ -139,7 +142,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="adq-ZJ-Xwh" id="z1r-6v-Njr"/>
-                        <outlet property="segments" destination="adq-ZJ-Xwh" id="kGk-wU-ZnE"/>
                         <outlet property="tableView" destination="Gv5-PH-Jr2" id="8BR-Ao-zpk"/>
                     </connections>
                 </viewController>
