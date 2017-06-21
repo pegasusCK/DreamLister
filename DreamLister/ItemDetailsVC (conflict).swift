@@ -109,10 +109,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         //current selection made at UIPickerView.  inComponent: 0 refers to the first and only column
         item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
         
-        //save to database
         ad.saveContext()
         
-        //new syntax for popViewController.  Take us back to the main ViewController
+        //new syntax for popViewController.  Take us back to the main view
         _ = navigationController?.popViewController(animated: true)
     }
 }
