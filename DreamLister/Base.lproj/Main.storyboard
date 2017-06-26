@@ -178,6 +178,9 @@
                                     <constraint firstAttribute="width" constant="100" id="9LS-NO-YOe"/>
                                     <constraint firstAttribute="height" constant="100" id="yK9-aM-tbG"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="qtD-Kj-Eb6" eventType="touchUpInside" id="hgs-n1-V6m"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuU-IL-PAX" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
@@ -270,12 +273,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="iRA-Dk-5dc">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="L3E-bK-GZb">
                             <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="qtD-Kj-Eb6" id="Ux6-6d-0pz"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="t3L-65-KyY" id="TPb-Dc-JSG"/>
                         <outlet property="priceField" destination="4um-YO-sdN" id="XkY-4g-YRC"/>
                         <outlet property="storePicker" destination="S8Q-kl-94x" id="2v7-7s-3Z5"/>
+                        <outlet property="thumbImg" destination="X6W-8T-Giu" id="C70-dZ-Yrg"/>
                         <outlet property="titleField" destination="KuU-IL-PAX" id="OPg-oA-Bef"/>
                     </connections>
                 </viewController>
