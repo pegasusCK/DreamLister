@@ -82,6 +82,8 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
+        //for single category picker column
+        //
         //let store = stores[row]
         //return store.name
         
@@ -100,6 +102,8 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
+        //for single category picker column
+        //
         //return stores.count
         
         if component == 0 {
@@ -196,6 +200,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         //current selection made at UIPickerView.  inComponent: 0 refers to the first and only column
         item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        item.toItemType = itemTypes[storePicker.selectedRow(inComponent: 1)]
         
         //save to database
         ad.saveContext()
@@ -227,6 +232,21 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                     }
                     index += 1
                 } while (index < stores.count)
+            }
+            
+            if let itemType = item.toItemType {
+                
+                var count = 0
+                repeat {
+                    
+                    let i = itemTypes[count]
+                    if i.type == itemType.type {
+                        
+                        storePicker.selectRow(count, inComponent: 1, animated: false)
+                        break;
+                    }
+                    count += 1
+                } while (count < itemTypes.count)
             }
         }
     }
