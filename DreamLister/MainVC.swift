@@ -15,7 +15,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     @IBOutlet weak var segment: UISegmentedControl!
     
     var controller: NSFetchedResultsController<Item>! //need to tell controller what will be fetched
-
+    var result = [Item]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -99,7 +100,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let dateSort = NSSortDescriptor(key: "created", ascending: false) //sorting data based on key "created"
         let priceSort = NSSortDescriptor(key: "price", ascending: true)
         let titleSort = NSSortDescriptor(key: "title", ascending: true)
-        
+        let typeSort = NSSortDescriptor(key: "toItemType.type", ascending: true) //sorting by type of item
+
         if segment.selectedSegmentIndex == 0 {
             
             fetchRequest.sortDescriptors = [dateSort]
@@ -109,13 +111,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         } else if segment.selectedSegmentIndex == 2 {
             
             fetchRequest.sortDescriptors = [titleSort]
+        } else if segment.selectedSegmentIndex == 3 {
+            
+            fetchRequest.sortDescriptors = [typeSort]
         }
-        
+            
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-        
+            
         controller.delegate = self //assign controller delegate to self
         self.controller = controller
-        
+            
         do {
             try controller.performFetch()
         } catch {
